@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://unpkg.com/wingcss" />
+</head>
+<body class="container">
+    <div id="app">
+        <h2 class="header">Metrics for <strong>thingie</strong></h2>
+        <p>The thing has text that explains how it does things</p>
+        <p><button class="outline">This is the button</button></p>
+        <bars
+            m-literal:data="[5, 7, 4, 3, 5, 12, 4, 7, 9]" m-literal:fill="['#7bddd3', '#079af9']" height="40" width="100"></bars>
+    </div>
+    <div class="base"></div>
+    <script src="https://unpkg.com/moonjs@0.11.0/dist/moon.js"></script>
+    <script src="https://unpkg.com/moon-bars@0.1.1/dist/moon-bars.js"></script>
+    <script>
+        Moon.use(MoonBars)
+        new Moon({ el: '#app' })
+    </script>
+</body>
+</html>

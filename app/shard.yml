@@ -1,0 +1,19 @@
+name: app
+version: 0.1.0
+
+authors:
+  - Ricardo Tomasi <ricardo.tomasi@booking.com>
+
+targets:
+  metrics:
+    main: src/metrics.cr
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+  sqlite3:
+    github: crystal-lang/crystal-sqlite3
+
+crystal: 0.23.1
+
+license: MIT
